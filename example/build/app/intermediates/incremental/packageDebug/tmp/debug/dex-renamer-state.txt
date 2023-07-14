@@ -1,4 +1,0 @@
-#Thu Jul 13 10:59:59 UZT 2023
-base.0=/Users/is/Desktop/test2022/module/flick-video-player/example/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
