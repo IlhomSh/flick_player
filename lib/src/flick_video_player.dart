@@ -1,3 +1,4 @@
+
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ class FlickVideoPlayer extends StatefulWidget {
     ],
     this.wakelockEnabled = true,
     this.wakelockEnabledFullscreen = true,
+
   }) : super(key: key);
 
   final FlickManager flickManager;
@@ -59,6 +61,7 @@ class FlickVideoPlayer extends StatefulWidget {
   final bool wakelockEnabledFullscreen;
 
 
+
   @override
   _FlickVideoPlayerState createState() => _FlickVideoPlayerState();
 }
@@ -79,6 +82,7 @@ class _FlickVideoPlayerState extends State<FlickVideoPlayer> {
     if (widget.wakelockEnabled) {
       Wakelock.enable();
     }
+
 
 
     super.initState();
@@ -139,6 +143,7 @@ class _FlickVideoPlayerState extends State<FlickVideoPlayer> {
     _isFullscreen = false;
 
 
+
     _overlayEntry?.remove();
     _overlayEntry = null;
     _setPreferredOrientation();
@@ -156,7 +161,7 @@ class _FlickVideoPlayerState extends State<FlickVideoPlayer> {
       SystemChrome.setPreferredOrientations(widget.preferredDeviceOrientation);
     }
   }
-//system ui
+
   _setSystemUIOverlays() {
     if (_isFullscreen) {
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
@@ -166,6 +171,7 @@ class _FlickVideoPlayerState extends State<FlickVideoPlayer> {
           overlays: widget.systemUIOverlay);
     }
   }
+
 
 
   @override
