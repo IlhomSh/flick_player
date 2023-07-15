@@ -1,4 +1,3 @@
-
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +24,6 @@ class FlickVideoPlayer extends StatefulWidget {
     ],
     this.wakelockEnabled = true,
     this.wakelockEnabledFullscreen = true,
-
   }) : super(key: key);
 
   final FlickManager flickManager;
@@ -118,7 +116,6 @@ class _FlickVideoPlayerState extends State<FlickVideoPlayer> {
     _isFullscreen = true;
     _setPreferredOrientation();
     _setSystemUIOverlays();
-
 
     _overlayEntry = OverlayEntry(builder: (context) {
       return Scaffold(
